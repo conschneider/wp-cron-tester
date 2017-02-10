@@ -43,7 +43,7 @@ if ( ! defined( 'ABSPATH' ) )
 		function crte_cron_output() 
 		{	
 				$test_cron_output = "<h3>CRON Test Job Successful:</h3>
-			    Oh Lookie! This is your scheduled cron, grinding out some hardcore tasks...Maximum Effort for the win!<br/><figure><img src='../wp-content/plugins/wp-cron-tester/deadpool_says_maximum_effort_200er.jpg'/><figcaption>Deadpool approves.</figcaption></figure>";
+			    Oh Lookie! This is your scheduled cron, grinding out some hardcore tasks...Maximum Effort for the win!<br/><figure><img src='../wp-content/plugins/wp-cron-tester/cron_output.jpg'/><figcaption>Deadpool approves.</figcaption></figure>";
 			    echo "$test_cron_output";
 
 		}
