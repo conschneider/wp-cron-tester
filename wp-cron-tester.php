@@ -7,8 +7,9 @@
  * Author URI: http://conschneider.de/
  * License: GPLv2 or later
  * Text Domain: crte-
- * Version: 1.0
+ * Version: 1.1
  * Domain Path: /languages/
+ 
  */
 
 if ( ! defined( 'ABSPATH' ) ) 
@@ -68,16 +69,19 @@ function crte_print_tasks($content)
 	require_once ("wp-config.php"); 
 
 	//get boolean of constants and store in variables for reliable access instead of direct access
-	function crte_getconst($const)
-		{
-		    //return value if set, if not set return null instead to prevent errors.
-		    return (defined($const)) ? constant($const) : null;
-		}
-	
+	if (is_single())
+	{
+			function crte_getconst($const)
+			{
+			    //return value if set, if not set return null instead to prevent errors.
+			    return (defined($const)) ? constant($const) : null;
+			}
+		
 	//get both constant values
 	$disable_const = crte_getconst('DISABLE_WP_CRON');
 	$alternative_const = crte_getconst('ALTERNATE_WP_CRON');
 
+	}
 	//output only on single post page
 	if(is_single())
 	{
