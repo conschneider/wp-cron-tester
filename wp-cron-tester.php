@@ -60,8 +60,8 @@ if ( ! defined( 'ABSPATH' ) )
 
 
 // Hook output to main post content
-add_filter('the_content', 'crte_print_tasks');
-
+//add_filter('the_content', 'crte_print_tasks');
+add_shortcode( 'crte', 'crte_print_tasks' );
 function crte_print_tasks($content) 
 
 {	
@@ -155,6 +155,8 @@ function crte_print_tasks($content)
 			}
 	
 } 
+
+
 			
 	 
 	
