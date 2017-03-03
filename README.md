@@ -1,9 +1,9 @@
 ### Info
 This plugin quickly answers the question **"Is my WordPress CRON service running ok?"**. 
 
-It adds a test CRON job and displays debugging content on each single post page. 
+It adds a test CRON job and displays debugging content by placing a shortcode `[crte]`. 
 
-On the single post page the timestamp of the test CRON job is displayed among with information whether CRON has been disabled or if alternative CRON has been set via `wp-config.php`. 
+Place shortcode on any post or page to display the timestamp of the test CRON job among with information whether CRON has been disabled or if alternative CRON has been set via `wp-config.php`. 
 
 ### Screenshot
 
